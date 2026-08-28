@@ -1,0 +1,17 @@
+filters:
+  and:
+    - '!file.path.contains("Templates")'
+    - entity == link("Tasks.base", "Task")
+views:
+  - type: table
+    name: All
+  - type: table
+    name: Ongoing
+    filters:
+      and:
+        - status == "ongoing"
+  - type: table
+    name: Completed
+    filters:
+      and:
+        - status == "completed"

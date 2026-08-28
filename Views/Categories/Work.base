@@ -1,0 +1,7 @@
+filters:
+  and:
+    - '!file.path.contains("Templates")'
+    - categories.contains(link("Work.base", "Work"))
+views:
+  - type: table
+    name: All

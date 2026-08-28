@@ -1,0 +1,12 @@
+filters:
+  and:
+    - '!file.path.contains("Templates")'
+    - categories == ["[[Music.base|Music]]"]
+views:
+  - type: table
+    name: All
+  - type: table
+    name: Pop rock albums
+    filters:
+      and:
+        - genre.contains("Pop rock")

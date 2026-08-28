@@ -1,0 +1,16 @@
+filters:
+  and:
+    - entity == link("Tasks.base", "Task")
+    - '!file.path.contains("Templates")'
+    - file.hasProperty("project")
+    - project == this.file
+views:
+  - type: table
+    name: Table
+    order:
+      - file.name
+      - status
+      - hours_spent
+      - start
+      - end
+      - assignee

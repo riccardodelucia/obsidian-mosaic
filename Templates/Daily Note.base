@@ -1,0 +1,10 @@
+filters:
+  and:
+    - created == this.date
+    - entity != link("Journal.base", "Journal")
+views:
+  - type: table
+    name: Table
+    sort:
+      - property: file.name
+        direction: ASC
