@@ -1,0 +1,7 @@
+filters:
+  and:
+    - categories.contains(link("Finance.base", "Finance"))
+    - descriptors.contains("options")
+views:
+  - type: table
+    name: Table

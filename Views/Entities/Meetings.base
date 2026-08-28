@@ -1,0 +1,19 @@
+filters:
+  and:
+    - '!file.path.contains("Templates")'
+    - entity == link("Meetings.base", "Meeting")
+views:
+  - type: table
+    name: All
+  - type: table
+    name: Incoming
+    filters:
+      and:
+        - start >= now()
+        - '!file.path.contains("Archive")'
+  - type: table
+    name: Past
+    filters:
+      and:
+        - start < now()
+        - '!file.path.contains("Archive")'

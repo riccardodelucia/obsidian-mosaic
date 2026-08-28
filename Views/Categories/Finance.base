@@ -1,0 +1,7 @@
+filters:
+  and:
+    - '!file.path.contains("Templates")'
+    - categories.contains(link("Finance.base", "Finance"))
+views:
+  - type: table
+    name: All
