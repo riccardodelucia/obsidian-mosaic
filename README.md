@@ -16,7 +16,6 @@ Views recombine all of these dimensions into answers.
 
 > **A mosaic is not a fixed representation of the vault. It is the perspective that emerges when the right tiles are selected and observed from the right angles for the question at hand.**
 
-
 ---
 
 ## Influences
@@ -30,6 +29,7 @@ PARA inspires the coarse separation of the system into different operational are
 - **Actions** contains active Projects and Tasks.
 - **Nodes** contains the knowledge graph and other semantic notes.
 - **Archive** contains material removed from the active working set.
+- **Resources** are an embedded type of *entity* in the system.
 
 The folder is therefore meaningful: it tells you the **role and lifecycle state of a note within the system**.
 
@@ -103,10 +103,10 @@ Graph view is deliberately setup to filter out `Archive/`, `Templates/`, `Views/
 
 The corresponding filter is:
 ```
--path:"Archive" -path:"Templates" -path:"Views" -file:"README"
+path:"Actions/" OR path:"Calendar/" OR path:"Inbox/" OR path:"Journal/" OR path:"Nodes/"
 ```
 
-Remove the filter to visualize everything, or modify it according to your needs. You can consider to discard Actions and Calendar nodes as well.
+Remove the filter to visualize everything, or modify it according to your needs.
 
 ---
 
@@ -143,6 +143,7 @@ Typical Entities include:
 
 - Concept: models a piece of knowledge.
 - Item: models everything in the world outside of concepts, such as people, books, animals, etc.
+- Resource: models everything that serves as a source of information, reference, or evidence.
 - Journal: models daily personal and work memories.
 - Project
 - Task
@@ -167,6 +168,7 @@ They represent persistent macro-contexts such as:
 - Software
 - Personal
 - Work
+- Clippings
 
 > [!tip] Work Category
 > The Work category is extremely useful to separate between your personal life subjects and  work-related stuff.
@@ -365,7 +367,6 @@ The project-management layer is intentionally *simple*. MOSAIC defines the separ
 
 ---
 
-
 ## Calendar
 
 Calendar nodes live inside `Calendar/`. They will likely be linked many times especially to Actions and Journal nodes.
@@ -378,31 +379,31 @@ Events are a variant of Meetings to be used for everything which is not inherent
 
 ---
 
-
 ## Hotkeys
 
-One single hotkey has been added:
+One single hotkey (Mac) has been added so far:
+
 - `Cmd+u` creates a new unique note in `Inbox/`.
 
 Feel free to remove it and start from a blank set of custom hotkeys.
 
 ---
 
+## Obsidian Web Clipper
+
+Use [mosaic-clipper.json](mosaic-clipper.json) template to configure your Obsidian Web Clipper to produce proper clippings into your MOSAIC vault. Clipped notes always enter in `Inbox/`. They are modeled as Resources, and have the Clippings category configured. This enables you to immediately have a glance of all clipped notes inside your vault, with the corresponding Clippings base.
+
+---
 
 ## License
 
 Copyright © 2026 Riccardo Roberto De Lucia.
 
-This Obsidian vault is distributed under the terms of the
-[Apache License 2.0](LICENSE).
+This Obsidian vault is distributed under the terms of the [Apache License 2.0](LICENSE).
 
-If you redistribute this vault, or a modified version containing
-substantial portions of it, you must preserve the applicable copyright,
-license, and attribution notices, including the notices contained in
-the [NOTICE](NOTICE) file.
+If you redistribute this vault, or a modified version containing substantial portions of it, you must preserve the applicable copyright, license, and attribution notices, including the notices contained in the [NOTICE](NOTICE) file.
 
-When reusing material from this vault, attribution to the original
-project is appreciated:
+When reusing material from this vault, attribution to the original project is appreciated:
 
-> Based on [MOSAIC](https://github.com/riccardodelucia/obsidian-mosaic)
-> by Riccardo Roberto De Lucia.
+> Based on [MOSAIC](https://github.com/riccardodelucia/obsidian-mosaic) by Riccardo Roberto De Lucia.
+

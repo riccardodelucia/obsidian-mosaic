@@ -1,0 +1,251 @@
+{
+  "main": {
+    "id": "7f9e3f9a10ae8e57",
+    "type": "split",
+    "children": [
+      {
+        "id": "31c7c923767a6c1b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6e15b2b5e552efb0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Inbox/obsidian vaults naming convention - Cerca con Google.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "obsidian vaults naming convention - Cerca con Google"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "15cba1c32490f54e",
+    "type": "split",
+    "children": [
+      {
+        "id": "8270ece1819d5fc5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "da713f179ab1242b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "85d0e70b688c5c8a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "e624e728e371e15e",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "3e80e8ef3d44b3e6",
+    "type": "split",
+    "children": [
+      {
+        "id": "dfa0120df086c7ac",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "12603901442714f0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "014fe60613855a0a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Inbox/2026-08-28 1522.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "cec6d177d4786da0",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "627bf896dad1d162",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "5d7aa684a2366a94",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          },
+          {
+            "id": "e2d477c91c0cf3ab",
+            "type": "leaf",
+            "state": {
+              "type": "footnotes",
+              "state": {},
+              "icon": "lucide-file-signature",
+              "title": "Footnotes"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "audio-recorder:Start/stop recording": false,
+      "zk-prefixer:Create new unique note": false
+    }
+  },
+  "active": "6e15b2b5e552efb0",
+  "lastOpenFiles": [
+    "Views/Categories/Clippings.base",
+    "Inbox/obsidian vaults naming convention - Cerca con Google.md",
+    "Views/Entities/Resources.base",
+    "README.md",
+    "Inbox/How to Make Electronic Music & Finish Tracks  A Free Course for Music Producers.md",
+    "mosaic-clipper.json",
+    "Inbox/Audiocoach.ai.md",
+    "Templates/Resource Template.md",
+    "Nodes/Obsidian Guide.md",
+    "Inbox/Obsidian Clipper.md",
+    "Nodes/Plugins.md",
+    "Templates/Unique Note Template.md",
+    "Views/Entities/Items.base",
+    "Views/Entities/Journal.base",
+    "Views/Entities/Meetings.base",
+    "Clippings/Audiocoach.ai.md",
+    "Clippings",
+    "Views/Categories/Work.base",
+    "Attachments/Screenshot 2026-08-21 alle 18.39.05.png",
+    "Attachments/Screenshot 2026-08-21 alle 18.25.36.png",
+    "Attachments/Screenshot 2026-08-21 alle 18.02.36.png",
+    "Attachments/Screenshot 2026-08-21 alle 16.57.54.png",
+    "Attachments/Screenshot 2026-08-21 alle 16.56.51.png",
+    "Attachments/Screenshot 2026-08-21 alle 15.24.59.png",
+    "Attachments/Screenshot 2026-08-11 alle 20.41.05.png",
+    "Attachments/Screenshot 2026-08-11 alle 20.40.03.png",
+    "Attachments/Screenshot 2026-08-10 alle 17.36.06 1.png",
+    "Attachments/Screenshot 2026-08-10 alle 17.19.01.png",
+    "Nodes/Famous Finance Quotes.md",
+    "Actions/Task Web Application Development.md",
+    "Actions/Project Web Application.md",
+    "Calendar/Concert.md",
+    "Calendar/Web Application Kickoff.md",
+    "Inbox/Black&Scholes.md",
+    "headings.md",
+    "Nodes/Options.md",
+    "Views/Entities/Concepts.base",
+    "Nodes/Volatility.md",
+    "Nodes/My favorite songs.md",
+    "Templates/Event Template.md",
+    "Views/Entities/Events.base",
+    "Templates/Meeting Template.md",
+    "Templates/Task Template.md",
+    "Templates/Project Template.md",
+    "Actions/Task Webapp development.md",
+    "Untitled 1.canvas",
+    "Untitled.canvas"
+  ]
+}

@@ -1,0 +1,7 @@
+filters:
+  and:
+    - '!file.path.contains("Templates")'
+    - categories.contains(link("Clippings.base", "Clipping"))
+views:
+  - type: table
+    name: Table

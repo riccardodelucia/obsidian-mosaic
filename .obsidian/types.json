@@ -12,10 +12,10 @@
     "descriptors": "multitext",
     "entity": "text",
     "date": "date",
-    "when": "datetime",
-    "where": "text",
     "participants": "multitext",
     "projects": "multitext",
-    "assignees": "multitext"
+    "assignees": "multitext",
+    "authors": "multitext",
+    "published": "date"
   }
 }

@@ -1,6 +1,6 @@
 {
   "collapse-filter": false,
-  "search": "-path:\"Archive\" -path:\"Templates\" -path:\"Views\" -file:\"README\"",
+  "search": "path:\"Actions/\" OR path:\"Calendar/\" OR path:\"Inbox/\" OR path:\"Journal/\" OR path:\"Nodes/\"",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": false,
@@ -18,5 +18,5 @@
   "linkStrength": 1,
   "linkDistance": 250,
   "scale": 0.4968697739394406,
-  "close": true
+  "close": false
 }
