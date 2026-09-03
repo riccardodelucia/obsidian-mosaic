@@ -1,6 +1,6 @@
 ---
 created: 2026-08-26
-entity: "[[Items.base|Item]]"
+entity: "[[Elements.base|Element]]"
 categories:
   - "[[Music.base|Music]]"
 descriptors:

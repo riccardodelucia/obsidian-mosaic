@@ -14,9 +14,7 @@ Tags mark exceptional transversal qualities.
 Links express relationships.  
 Views recombine all of these dimensions into answers.
 
-> **A mosaic is not a fixed representation of the vault. It is the perspective that emerges when the right tiles are selected and observed from the right angles for the question at hand.**
-
----
+**A mosaic is not a fixed representation of the vault. It is the perspective that emerges when the right tiles are selected and observed from the right angles for the question at hand.**
 
 ## Influences
 
@@ -24,24 +22,23 @@ MOSAIC is not a replacement for established knowledge-management methods. It com
 
 ### PARA
 
-PARA inspires the coarse separation of the system into different operational areas.
+PARA inspires the coarse separation of the system into different operational containers: Projects, Areas, Resources, Archive.
 
-- **Actions** contains active Projects and Tasks.
-- **Nodes** contains the knowledge graph and other semantic notes.
-- **Archive** contains material removed from the active working set.
-- **Resources** are an embedded type of *entity* in the system.
+MOSAIC borrows PARA's operational separation reinterpreting the different roles:
+- **Actions** folder contains active Projects and Tasks.
+- **Nodes** folder contains the knowledge graph and other semantic notes.
+- **Archive** folder contains material removed from the active working set.
+- **Resources** are an embedded type of *entity* in the system, which model everything external from personal interpretation or rearrangement.
 
-The folder is therefore meaningful: it tells you the **role and lifecycle state of a note within the system**.
+Further folders have been added to MOSAIC. Each folder is meaningful: it tells you the **role and lifecycle state of a note within the system**.
 
 Projects and Tasks are grouped under `Actions/` because they belong to the same operational space and are fundamentally different from knowledge nodes. Keeping them physically separate also makes it easy to extract the action-management layer into a dedicated project-management vault in the future without restructuring the knowledge graph.
-
-MOSAIC borrows PARA's operational separation without reproducing its folder taxonomy literally.
 
 ### Zettelkasten
 
 Zettelkasten inspires the way knowledge can be developed inside `Nodes/`: notes should preferably be self-contained, written in your own words, and extensively connected through meaningful links.
 
-MOSAIC deliberately keeps only this core idea. It does not require later Zettelkasten taxonomies such as **literature notes, permanent notes, fleeting notes**, or similar note classes.
+MOSAIC deliberately keeps only this core idea. It does not require later Zettelkasten taxonomies such as **literature notes, permanent notes, fleeting notes**, or similar note classes. Such concepts are nevertheless in some way modeled in the system.
 
 Atomic notes are recommended, not mandatory. A small note is a small tile; a large, developed note is simply a larger tile. Both can still participate in the same mosaic through links and facets.
 
@@ -59,8 +56,6 @@ Steph Ango's approach inspires MOSAIC in several ways:
 MOSAIC modifies these ideas by using a more explicit folder architecture and by decomposing classification into three independent layers: **Entity, Category, and Descriptor**.
 
 This creates a faceted system in which notes can be retrieved from many angles without requiring a dedicated template and Base for every possible classification. Structure is formalized only when it becomes useful. Retrieval is made powerful, non-destructive and open to continuous changes.
-
----
 
 ## Vault structure
 
@@ -108,11 +103,9 @@ path:"Actions/" OR path:"Calendar/" OR path:"Inbox/" OR path:"Journal/" OR path:
 
 Remove the filter to visualize everything, or modify it according to your needs.
 
----
-
 ## Workflow
 
-The default entry point is **Unique Note**, which creates notes in `Inbox/`
+The default entry point is **Unique Note**, through the Unique Note Plugin, which is setup to create notes in `Inbox/`.
 
 Every new note starts from the same minimal template, which defines a minimal set of **properties**:
 
@@ -129,8 +122,6 @@ From there:
 2. Fill in additional properties.
 3. Write the note body.
 
----
-
 ## Faceted organization
 
 MOSAIC organizes notes through three primary semantic layers.
@@ -139,22 +130,39 @@ MOSAIC organizes notes through three primary semantic layers.
 
 The **Entity** defines the operational nature of the node: what kind of object it is in the system.
 
-Typical Entities include:
+A node has one primary Entity.
 
-- Concept: models a piece of knowledge.
-- Item: models everything in the world outside of concepts, such as people, books, animals, etc.
-- Resource: models everything that serves as a source of information, reference, or evidence.
+Entities are deliberately few. They exist only when different kinds of notes need meaningfully different behavior, role and structure.
+
+**Every Entity must have a corresponding Base in `Views/Entities/`.**
+
+Modeled Entities include:
+
+- Resource: a note that represents an external resource, regardless of how much you have summarized, annotated, or reworked it.
+- Element: a note that models something inside MOSAIC and is not primarily the representation of an external resource.
 - Journal: models daily personal and work memories.
 - Project
 - Task
 - Meeting
 - Event
 
-A node has one primary Entity.
+The most challenging part is the distinction between Elements and Resources. As a general rule of thumb:
 
-Entities are deliberately few. They exist only when different kinds of notes need meaningfully different behavior, role and structure.
+> If the identity of the note depends on a specific external resource, it is a Resource. Otherwise, it is an Element. When both representations are useful, split them into two linked notes.
 
-> **Every Entity must have a corresponding Base in `Views/Entities/`.**
+Examples:
+- book → `Resource`
+- article → `Resource`
+- web page/ clipping → `Resource`
+- PDF → `Resource`
+- paper → `Resource`
+- video → `Resource`
+- a note that distills an external guide → `Resource`
+- Vue → `Element`
+- Vue official guide →  `Resource`
+- Service Worker → `Element`
+- Volatility → `Element`
+- Milan → `Element`
 
 ### Categories
 
@@ -170,12 +178,11 @@ They represent persistent macro-contexts such as:
 - Work
 - Clippings
 
-> [!tip] Work Category
 > The Work category is extremely useful to separate between your personal life subjects and  work-related stuff.
 
 A Category is important enough to deserve a permanent View. Therefore:
 
-> **Every Category must have a corresponding Base in `Views/Categories/`.**
+> Every Category must have a corresponding Base in `Views/Categories/`.
 
 Categories should remain relatively stable, and widely used by nodes.
 
@@ -198,26 +205,21 @@ Categories and Descriptors may overlap semantically. The difference is their **i
 
 A recurring Descriptor can be promoted to a Category when it becomes useful as a permanent perspective over the vault.
 
-> **Descriptors are created freely. Categories are promoted deliberately.**
+> Descriptors are created freely. Categories are promoted deliberately.
 
 Prefer singular terms in properties when practical. Views may use plural names because they represent collections.
-
----
 
 ## Linked Entities and Categories
 
 Each Entity and Category is backed by a Base, so its property value should be stored as a link rather than plain text.
 
-> [!warning] First reference and renaming
-> Using bases as references is not ideal, since they carry the `.base` extension in the link. You may want to polish the link label. If that is the case, the first time you reference a base as an Entity/ Category from a note or template, you must write it by hand, and change the shown name, as described here below.
-
-For example:
+Using bases as references is not ideal, since they carry the `.base` extension in the link. You may want to polish the link label. If that is the case, the first time you reference a base as an Entity/ Category from a note or template, you must write it by hand, and change the shown name, as described here below:
 
 ```yaml
 entity: "[[Projects.base|Project]]"
 ```
 
-The underlying file can use a plural collection name such as:
+The underlying Base file can use a plural collection name such as:
 
 ```text
 Projects.base
@@ -243,12 +245,10 @@ Descriptors remain plain values because they are intentionally lightweight:
 
 ```yaml
 descriptors:
-  - option
+  - options
   - volatility
   - pricing
 ```
-
----
 
 ## Tags
 
@@ -268,33 +268,31 @@ The initial MOSAIC vocabulary is intentionally small:
 - `#important` — unusually relevant or significant.
 - `#inspiring` — something motivational, worth to remember.
 - `#memories` — worth remembering for personal significance.
-- `#review` — requires reviewing the content.
-- `#deprecated` — still intelligible or usable, but no longer recommended as the current reference.
-- `#obsolete` — superseded by time, facts, or a later version.
+- `#review` — ralready enterd the system but requires further review.
+- `#deprecated` — still intelligible or usable, but no longer recommended as the current reference. Useful for dev concepts and technologies.
+- `#obsolete` — superseded by time, facts, or a later version. E.g. an old scientific principle which nowadays has been revised by the Scientific Community.
 
 Tags belong to properties. It is discouraged to use tags in the body. Use them sparingly as an *exception*.
 
 If a tag starts describing *what the note is about*, it should probably become a Category or Descriptor instead.
 
----
-
 ## Views, facets, and retrieval
 
 Views are how MOSAIC turns metadata into perspectives.
 
-Two kinds are automatic:
+Two kinds of views are automatic:
 
 - `Views/Entities/` contains one Base for every Entity.
 - `Views/Categories/` contains one Base for every Category.
 
-`Views/Custom/` contains recurring questions that combine multiple facets, for example:
+`Views/Custom/` contains custom, recurring questions that combine multiple facets, for example:
 
 - open Finance Tasks;
-- important Concepts about volatility;
+- important concepts about volatility;
 - memorable Music Items;
 - Projects with an upcoming deadline.
 
-Descriptors do not require permanent Views. They can be retrieved ad hoc through Obsidian Search or Quick Switcher, and promoted into a Custom View only when the same question becomes recurring.
+Descriptors do not require permanent Views. They can be retrieved ad hoc through Obsidian Search, and promoted into a Custom View only when the same question becomes recurring.
 
 Examples of property searches:
 
@@ -308,8 +306,6 @@ Examples of property searches:
 This is the core of MOSAIC: **notes remain cheap to create because classification is lightweight, while retrieval remains powerful because facets can be recombined according to the current question.**
 
 The same tile can therefore appear in many different mosaics without being duplicated.
-
----
 
 ## Journaling
 
@@ -349,23 +345,19 @@ A Journal template can then provide sections such as:
 
 Journal notes are created through the normal Unique Note workflow and adding the corresponding `Journal Template`, rather than depending on a rigid Daily Notes mechanism. This keeps the system flexible when writing about previous days.
 
----
-
 ## Project management
 
 Project management lives inside `Actions/`.
 
 Projects and Tasks are separate Entities because they have different operational characteristics, even though they share the same physical area of the vault.
 
-Projects and Tasks templates both set a frontmatter and a body, to be used as reference for keeping a consistent format for all notes.
+Projects and Tasks templates both set a *frontmatter* and a *body*, to be used as reference for keeping a consistent format for all notes.
 
-Projects contain bases that point to all Tasks and Meetings linked to the project itself.
+Projects contain Bases that point to all Tasks and Meetings linked to the project itself.
 
 In tasks, body checkboxes should describe the progressive completion of local steps, while the Task's properties describe the Task as a managed action.
 
 The project-management layer is intentionally *simple*. MOSAIC defines the separation and relationships, but the exact statuses, reporting conventions, time tracking, and workflows should be developed to the needs of each user.
-
----
 
 ## Calendar
 
@@ -377,8 +369,6 @@ Meetings can be use to store appointments of any type. You may want to add the W
 
 Events are a variant of Meetings to be used for everything which is not inherently a meeting, such as a concert, a trip or a medical appointment.
 
----
-
 ## Hotkeys
 
 One single hotkey (Mac) has been added so far:
@@ -387,13 +377,9 @@ One single hotkey (Mac) has been added so far:
 
 Feel free to remove it and start from a blank set of custom hotkeys.
 
----
-
 ## Obsidian Web Clipper
 
 Use [mosaic-clipper.json](mosaic-clipper.json) template to configure your Obsidian Web Clipper to produce proper clippings into your MOSAIC vault. Clipped notes always enter in `Inbox/`. They are modeled as Resources, and have the Clippings category configured. This enables you to immediately have a glance of all clipped notes inside your vault, with the corresponding Clippings base.
-
----
 
 ## License
 

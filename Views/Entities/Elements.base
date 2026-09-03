@@ -1,7 +1,7 @@
 filters:
   and:
     - '!file.path.contains("Templates")'
-    - entity == link("Concepts.base", "Concept")
+    - entity == link("Elements.base", "Element")
 views:
   - type: table
-    name: All
+    name: Table

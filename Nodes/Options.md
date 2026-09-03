@@ -1,6 +1,6 @@
 ---
 created: 2026-08-27
-entity: "[[Concepts.base|Concept]]"
+entity: "[[Elements.base|Element]]"
 categories:
   - "[[Finance.base|Finance]]"
 descriptors:
